@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="population-game.css" />
+    <title>Higher Population Game</title>
+  </head>
+  <body>
+    <h1>WHICH COUNTRY HAS A HIGHER POPULATION?</h1>
+    <main>
+      <div id="boxes" class="boxes-grid">
+        <div class="lose-screen">
+          <h1>YOU LOSE</h1>
+          <p id="lose-screen-country1"></p>
+          <p id="lose-screen-country2"></p>
+          <p id="lose-screen-score"></p>
+          <button id="button">RESTART</button>
+        </div>
+        <div id="population-box1" class="box hide"></div>
+        <div id="population-box2" class="box hide"></div>
+
+        <div id="country-box1" class="box question">
+          <div class="img-box">
+            <img src="" alt="" id="flag-box1" />
+          </div>
+          <p id="country-name1"></p>
+        </div>
+
+        <div id="country-box2" class="box question">
+          <div class="img-box">
+            <img src="" alt="" id="flag-box2" />
+          </div>
+          <p id="country-name2"></p>
+        </div>
+      </div>
+
+      <div class="container">
+        <button id="next" class="hide">NEXT</button>
+        <h1 id="score">SCORE:</h1>
+      </div>
+    </main>
+
+    <script src="population-game.js" type="module"></script>
+  </body>
+</html>

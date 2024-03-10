@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="flags-game.css" />
+    <title>Flags Game</title>
+  </head>
+  <body>
+    <h1>GUESS THE FLAG</h1>
+    <main>
+      <div id="country-box-question">
+        <div id="country-box" class="box">
+          <p id="country-name"></p>
+        </div>
+      </div>
+
+      <div id="boxes" class="boxes-grid-small">
+        <div class="lose-screen">
+          <h1>YOU LOSE</h1>
+          <p id="lose-screen-text" class="red"></p>
+          <div class="img-box">
+            <img src="" id="lose-screen-flag" class="flag-small" />
+          </div>
+          <p id="lose-screen-score"></p>
+          <button id="reset-button1">RESTART</button>
+        </div>
+
+        <div class="winner-screen">
+          <h1>YOU WIN!</h1>
+          <p id="lose-screen-text" class="green">You're the GOAT</p>
+          <div class="img-box">
+            <img
+              src="https://images.pexels.com/photos/86594/goat-animal-horns-black-and-white-86594.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+              id="winner-screen-img"
+            />
+          </div>
+          <button id="reset-button2">RESTART</button>
+        </div>
+
+        <div id="flag-box-answer1" class="answer box-small hide">
+          <div class="img-box">
+            <img src="" id="flagAnswer1" class="flag-small" />
+          </div>
+        </div>
+
+        <div id="flag-box-answer2" class="answer box-small hide">
+          <div class="img-box">
+            <img src="" id="flagAnswer2" class="flag-small" />
+          </div>
+        </div>
+
+        <div id="flag-box-answer3" class="answer box-small hide">
+          <div class="img-box">
+            <img src="" id="flagAnswer3" class="flag-small" />
+          </div>
+        </div>
+
+        <div id="flag-box-answer4" class="answer box-small hide">
+          <div class="img-box">
+            <img src="" id="flagAnswer4" class="flag-small" />
+          </div>
+        </div>
+
+        <div id="flag-box1" class="question box-small">
+          <div class="img-box">
+            <img src="" id="flag1" class="flag-small" />
+          </div>
+        </div>
+
+        <div id="flag-box2" class="question box-small">
+          <div class="img-box">
+            <img src="" id="flag2" class="flag-small" />
+          </div>
+        </div>
+
+        <div id="flag-box3" class="question box-small">
+          <div class="img-box">
+            <img src="" id="flag3" class="flag-small" />
+          </div>
+        </div>
+
+        <div id="flag-box4" class="question box-small">
+          <div class="img-box">
+            <img src="" id="flag4" class="flag-small" />
+          </div>
+        </div>
+      </div>
+
+      <div class="container">
+        <button id="next" class="hide">NEXT</button>
+        <h1 id="score">SCORE:</h1>
+      </div>
+    </main>
+
+    <script src="flags-game.js" type="module"></script>
+  </body>
+</html>
